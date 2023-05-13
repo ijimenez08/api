@@ -11,18 +11,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Direccion 
 {
-    
+//public record DatosDireccion(String calle, String corregimiento, String distrito, String provincia) 
+
    
     private String calle;
-    private Integer numero;
-    private String ciudad;
+    private String corregimineto;
+    private String provincia;
     private String distrito;
 
     public Direccion(DatosDireccion direccion) 
     {
         this.calle = direccion.calle();
-        this.numero = direccion.numero();
-        this.ciudad = direccion.ciudad();
+        this.corregimineto = direccion.corregimiento();
+        this.provincia = direccion.provincia();
         this.distrito = direccion.distrito();
     }
 
